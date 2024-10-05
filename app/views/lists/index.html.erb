@@ -8,10 +8,5 @@
   </span>
   
   <p>画像</p>
-  <% if list.image.attached? %>
-  <!--しっかりと動作しなければxの部分を検討-->
-    <%= image_tag list.image, size: "200x200" %>
-  <% else %>
-    <%= image_tag 'no_image', size: "200x200" %>
-  <% end %>
+  <%= image_tag list.image, size: "200x200" %>
 <% end %>
